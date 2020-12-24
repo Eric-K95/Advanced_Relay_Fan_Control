@@ -1,4 +1,4 @@
-//Final Project: Relay + Fan + MQ2 chemical gas sensor
+//Project: Relay + Fan + MQ2 chemical gas sensor
 //Sketched by JIN-WOO KIM
 
 #include <LiquidCrystal_I2C.h>
@@ -17,10 +17,8 @@ void setup() {
   pinMode(buzzerPin, OUTPUT); //initialize the buzzer Pin as an output
   pinMode(mq2Pin, INPUT); //initialize the MQ2 gas chemical sensor as an input
   lcd.begin();
-  lcd.setCursor(2, 0); //sixth column, row #1
-  lcd.print("JIN-WOO KIM");
-  lcd.setCursor(1, 1); //fifth column, row #2
-  lcd.print("MECH3672-OL30");
+  lcd.setCursor(0, 0); //first column, row #1
+  lcd.print("Hello World!");
   delay(2000);   //delay of the message
   lcd.clear();   // clear screen
   lcd.setCursor(0, 0); //first column, row #1
